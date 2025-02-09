@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib import admin
+
 
 
 # Create your models here.
@@ -15,7 +17,6 @@ class Customer(models.Model):
     QQ=models.CharField(max_length=30,null=True,blank=True)
 
 
-from django.contrib import admin
 admin.site.register(Customer)
 
 class Medicine(models.Model):
@@ -26,5 +27,4 @@ class Medicine(models.Model):
     # 药品描述
     desc = models.CharField(max_length=200)
 
-from django.contrib import admin
 admin.site.register(Medicine)
